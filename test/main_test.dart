@@ -15,5 +15,9 @@ void main() {
     test('return Buzz if number is 5', () {
       expect(fizzbuzz().take(10), [1, 2, 'Fizz', 4, 'Buzz', 6, 7, 8, 9, 10]);
     });
+
+    test('return FizzBuzz if number is 15', () {
+      expect(fizzbuzz().take(15), [1, 2, 'Fizz', 4, 'Buzz', 6, 7, 8, 9, 10, 11, 12, 13, 14, 'FizzBuzz']);
+    });
   });
 }
