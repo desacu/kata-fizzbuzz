@@ -46,7 +46,7 @@ void main() {
     });
 
     test('returns Fizz if number contains a 3', () {
-      expect(fizzbuzz().take(23), [
+      expect(fizzbuzz(checkContainNumbers: true).take(23), [
         1,
         2,
         'Fizz',
@@ -67,7 +67,7 @@ void main() {
         'Fizz',
         19,
         'Buzz',
-        21,
+        'Fizz',
         22,
         'Fizz'
       ]);
