@@ -9,15 +9,15 @@ void main() {
     });
 
     test('return Fizz if number is 3', () {
-      expect(fizzbuzz().take(4), [1, 2, 'Fizz', 4]);
+      expect(fizzbuzz().take(3), [1, 2, 'Fizz']);
     });
 
     test('return Buzz if number is 5', () {
-      expect(fizzbuzz().take(10), [1, 2, 'Fizz', 4, 'Buzz', 6, 7, 8, 9, 10]);
+      expect(fizzbuzz().take(5), [1, 2, 'Fizz', 4, 'Buzz']);
     });
 
     test('return FizzBuzz if number is 15', () {
-      expect(fizzbuzz().take(15), [1, 2, 'Fizz', 4, 'Buzz', 6, 7, 8, 9, 10, 11, 12, 13, 14, 'FizzBuzz']);
+      expect(fizzbuzz().skip(12).take(5), [13, 14, 'FizzBuzz', 16, 17]);
     });
   });
 }
