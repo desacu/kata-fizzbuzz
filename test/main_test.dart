@@ -19,5 +19,30 @@ void main() {
     test('return FizzBuzz if number is 15', () {
       expect(fizzbuzz().skip(12).take(5), [13, 14, 'FizzBuzz', 16, 17]);
     });
+
+    test('returns the correct combination for the first 20 elements', () {
+      expect(fizzbuzz().take(20), [
+        1,
+        2,
+        'Fizz',
+        4,
+        'Buzz',
+        'Fizz',
+        7,
+        8,
+        'Fizz',
+        'Buzz',
+        11,
+        'Fizz',
+        13,
+        14,
+        'FizzBuzz',
+        16,
+        17,
+        'Fizz',
+        19,
+        'Buzz'
+      ]);
+    });
   });
 }
