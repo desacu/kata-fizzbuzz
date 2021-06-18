@@ -1,6 +1,8 @@
 Iterable<dynamic> fizzbuzz() {
   return generateNumberRange().map((number) {
-    return (number == 3) ? 'Fizz' : number;
+    if (number == 3) return 'Fizz';
+    if (number == 5) return 'Buzz';
+    return number;
   });
 }
 
