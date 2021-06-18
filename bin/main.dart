@@ -1,1 +1,7 @@
-List<int> fizzbuzz([int maxRange = 100]) => [for (int i = 1; i <= maxRange; i++) i];
+Iterable<dynamic> fizzbuzz() {
+  return generateNumberRange().map((number) {
+    return (number == 3) ? 'Fizz' : number;
+  });
+}
+
+Iterable<int> generateNumberRange() => [for (var number = 1; number <= 100; number++) number];
